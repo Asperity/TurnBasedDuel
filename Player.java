@@ -37,6 +37,8 @@ public class Player {
         {
             numPots--;
             health += 5;
+            System.out.println("Health +5");
+            System.out.println("Potion(s) Left: " + numPots);
         }
     }
 

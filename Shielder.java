@@ -6,6 +6,7 @@ public class Shielder extends Player
     {
         super.setHealth(30);
         super.setPots(0);
+        numShields = 0;
     }
 
     public void shield()
@@ -13,6 +14,9 @@ public class Shielder extends Player
         if(numShields != 2)
         {
             setHealth(getHealth()+10);
+            numShields++;
+            System.out.println("Shield Up! Health +10");
+            System.out.println("Shield(s) left: " + (2-numShields));
         }
         else
         {

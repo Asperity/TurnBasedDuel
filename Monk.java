@@ -22,7 +22,7 @@ public class Monk extends Player
         if((int)(Math.random()*5+1)<=3)
         {
             temp*=2;
-            if((int)(Math.random()*3+1)==1)
+            if((int)(Math.random()*3+1)==1 && count == 0)
             {
             count++;
             attack();
